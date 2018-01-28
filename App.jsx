@@ -32,11 +32,3 @@ class App extends React.Component {
    }
 }
 export default App
-
-jQuery(document).ready(function ($) {
-    $('span:contains("File")').each(function(i, obj) {
-        if (obj.currentSrc.includes("pdf")){
-            window.open(obj.parentNode.parentNode.href);
-        }
-    });
-});
